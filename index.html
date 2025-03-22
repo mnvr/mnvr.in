@@ -91,6 +91,24 @@ hr.sep {
   line-height: 1.35;
 }
 
+article#flower {
+  min-height: 80svh;
+  font-family: sans-serif;
+  margin-inline-start: calc(var(--main-margin) * 2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .flower-heading > * {
+    font-weight: normal;
+    margin: 0;
+  }
+
+  cite {
+    font-style: normal;
+  }
+}
+
 article#free-lunch {
   margin-inline: var(--main-margin);
   margin-block-end: 3em;
@@ -318,6 +336,21 @@ new IntersectionObserver((entries, observer) => {
 </head>
 
 <body>
+
+<article id="flower">
+<div>
+<div class="flower-heading">
+<h4>the flower that blooms late in my yard</h4>
+<p>Li Bai</p>
+</div>
+<p>
+the queen mother of the west I planted in my garden<br>
+took sixty springs to bloom<br>
+all this for one flower? people snide,<br>
+I climb to pick it up, and sigh
+</p>
+</div>
+</article>
 
 <article id="free-lunch">
 <h4>
